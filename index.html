@@ -115,10 +115,11 @@
     pointer-events:none;
   }
   .hero-inner{position:relative;max-width:760px;margin:0 auto;}
-  .hero-mark{width:104px;height:auto;margin:0 auto 28px;}
+  .hero-mark{width:104px;height:auto;margin:28px auto;}
   .hero p.eyebrow{font-size:0.76rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin:0 0 18px;}
-  .hero h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.05;}
-  .hero .tagline{font-family:'Manrope',sans-serif;font-weight:800;letter-spacing:0.16em;font-size:clamp(0.95rem,1.8vw,1.15rem);color:var(--silver);margin:22px 0 26px;text-transform:uppercase;}
+  .hero-brand{font-size:clamp(3.4rem,11vw,7rem);line-height:0.95;letter-spacing:0.02em;font-weight:700;}
+  .hero-subtitle{font-size:clamp(1.5rem,3.6vw,2.4rem);line-height:1.15;font-weight:600;color:var(--ivory);}
+  .hero .tagline{font-family:'Manrope',sans-serif;font-weight:800;letter-spacing:0.16em;font-size:clamp(0.95rem,1.8vw,1.15rem);color:var(--gold);margin:22px 0 26px;text-transform:uppercase;}
   .hero p.sub{max-width:52ch;margin:0 auto 40px;font-size:1.08rem;color:var(--gray);}
   .hero-cta-row{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;}
 
@@ -295,8 +296,9 @@
 <section class="hero" id="top">
   <div class="wrap hero-inner">
     <p class="eyebrow reveal">Professional Websites for Local Businesses</p>
+    <h1 class="hero-brand reveal">SEWDI</h1>
     <img class="hero-mark reveal" src="logo-icon.png" alt="SEWDI handshake mark" width="240" height="230" decoding="async">
-    <h1 class="reveal">Someone Else Will Do It</h1>
+    <h2 class="hero-subtitle reveal">Someone Else Will Do It</h2>
     <p class="tagline reveal">We Build. You Grow.</p>
     <p class="sub reveal">Professional websites designed to help local businesses build trust, get found online, and generate more customer inquiries.</p>
     <div class="hero-cta-row reveal">
