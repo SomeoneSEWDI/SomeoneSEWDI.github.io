@@ -2,9 +2,9 @@
   "name": "Someone Else Will Do It (SEWDI)",
   "short_name": "SEWDI",
   "icons": [
-    { "src": "images/favicon-32.png", "sizes": "32x32", "type": "image/png" },
-    { "src": "images/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
-    { "src": "images/icon-512.jpg", "sizes": "512x512", "type": "image/jpeg" }
+    { "src": "favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-512.jpg", "sizes": "512x512", "type": "image/jpeg" }
   ],
   "theme_color": "#0A0A0C",
   "background_color": "#0A0A0C",
