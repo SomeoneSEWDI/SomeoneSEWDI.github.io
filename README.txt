@@ -1,21 +1,12 @@
-GITHUB PAGES UPLOAD INSTRUCTIONS
+Place one homepage screenshot per category in this folder using these
+exact filenames (no code changes needed):
 
-Upload the CONTENTS of this folder (not the folder itself) to the root
-of your GitHub Pages repository — index.html must sit at the repo root.
+lawn-care.jpg
+snow-removal.jpg
+concrete.jpg
+roofing.jpg
+fishing-guides.jpg
+home-services.jpg
 
-Files/folders to upload:
-- index.html
-- googleefc1a37b287ea2ed.html
-- Images/
-- Assets/
-- assets/
-
-Portfolio homepage screenshots go in:
-assets/images/portfolio/lawn-care.jpg
-assets/images/portfolio/snow-removal.jpg
-assets/images/portfolio/concrete.jpg
-assets/images/portfolio/roofing.jpg
-assets/images/portfolio/fishing-guides.jpg
-assets/images/portfolio/home-services.jpg
-
-No code edits are needed — just add the image files with those exact names.
+Recommended: roughly a 4:3 or wider landscape crop of each site's
+homepage, at least 800px wide, so it fills the portfolio card cleanly.
