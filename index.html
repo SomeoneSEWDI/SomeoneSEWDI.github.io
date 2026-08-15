@@ -732,10 +732,13 @@
     formMsg.className = 'form-msg';
     formMsg.textContent = '';
 
+    const formData = new FormData(quoteForm);
+    formData.append('Submitted (Central Time)', new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' }));
+
     fetch(quoteForm.action, {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
-      body: new FormData(quoteForm)
+      body: formData
     })
       .then((res) => {
         if (!res.ok) throw new Error('Submit failed');
