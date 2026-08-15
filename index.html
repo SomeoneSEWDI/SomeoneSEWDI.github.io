@@ -571,9 +571,9 @@
     </div>
     <div class="form-card reveal">
       <div class="form-msg" id="formMsg"></div>
-      <form id="quoteForm" name="website-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="website-request">
-        <p class="honeypot"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+      <form id="quoteForm" name="website-request" method="POST" action="https://formsubmit.co/ajax/SEWDI.co@gmail.com">
+        <input type="hidden" name="_subject" value="New website request from SEWDI site">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <div class="two-col">
           <div>
             <label for="name">Name</label>
@@ -720,15 +720,10 @@
     items.forEach(i => io.observe(i));
   } else { items.forEach(i => i.classList.add('is-visible')); }
 
-  // Netlify Forms AJAX submission
+  // FormSubmit.co AJAX submission (works on static GitHub Pages hosting)
   const quoteForm = document.getElementById('quoteForm');
   const formMsg = document.getElementById('formMsg');
   const submitBtn = document.getElementById('submitBtn');
-
-  function encodeFormData(form) {
-    const data = new FormData(form);
-    return new URLSearchParams(data).toString();
-  }
 
   quoteForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -737,11 +732,14 @@
     formMsg.className = 'form-msg';
     formMsg.textContent = '';
 
-    fetch('/', {
+    fetch(quoteForm.action, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encodeFormData(quoteForm)
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(quoteForm)
     })
+      .then((res) => {
+        if (!res.ok) throw new Error('Submit failed');
+      })
       .then(() => {
         formMsg.classList.add('success');
         formMsg.textContent = "Thank you — your request has been sent. We'll follow up shortly.";
